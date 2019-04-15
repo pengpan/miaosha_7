@@ -1,6 +1,13 @@
 package com.imooc.miaosha.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Table
+@Entity
 public class MiaoshaOrder {
+	@Id
 	private Long id;
 	private Long userId;
 	private Long  orderId;
